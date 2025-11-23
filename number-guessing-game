@@ -1,0 +1,25 @@
+#Pyton number guessing game
+
+bom = input("Guess the number: ")
+numb =float(bom)
+count = 0
+
+while True:
+    
+    bom = input("Guess the number: ")
+    numb = float(bom)
+    count += 1
+    if numb < 200:
+        print("you are so far away from the actual number, upper")
+    elif numb < 500:
+        print("ups no even close, upper pls")
+    elif numb < 713:
+        print("almost there, upper")
+    elif numb > 713:
+        print("almost there but go down a bit")
+    elif numb > 800:
+        print("you are flying man down down down!!")
+    else:
+        
+        print("Congratiolations!!! It took you", count , "tries!" )
+        break
